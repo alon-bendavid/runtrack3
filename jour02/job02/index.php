@@ -6,8 +6,8 @@
 </head>
 
 <body>
-    <article id="text"></article>
     <button id="button">Click me</button>
+    <article id="text"></article>
     <script src="script.js"></script>
 </body>
 
