@@ -13,10 +13,9 @@
 </head>
 
 <body>
-    <button id="text">Show Text</button>
-    <button id="delText">Delete Text</button>
+    <button id="shuffle-button">Shuffle</button>
 
-    <div class="border">
+    <div class="border" id="boundary-div">
         <img id="1" src=".\media\arc1.png" alt="">
 
         <img id="2" src=".\media\arc2.png" alt="">
