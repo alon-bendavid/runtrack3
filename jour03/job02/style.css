@@ -1,0 +1,9 @@
+.border{
+    background-color: rgb(187, 187, 187);
+    width: 50%;
+}
+body {
+    display: flex;
+    justify-content: center;
+}
+
