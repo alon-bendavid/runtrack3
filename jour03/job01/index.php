@@ -12,7 +12,7 @@
 
 <body>
     <button id="text">Show Text</button>
-    <button id="delText">Delte Text</button>
+    <button id="delText">Delete Text</button>
 
     <div id="textContainer"></div>
 
