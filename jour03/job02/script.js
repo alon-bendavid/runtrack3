@@ -22,20 +22,4 @@ $(document).ready(function(){
         }).appendTo(parent);
     });
 });
-function checkForWin() {
-    var win = true;
-    var images = $("#boundary-div img");
-    var desiredPositions = ["#1", "#2", "#3", "#4", "#5", "#6"];
-    images.each(function(index) {
-      var currentId = $(this).attr("id");
-      var desiredId = desiredPositions[index];
-      if (currentId !== desiredId) {
-        win = false;
-        return false;
-      }
-    });
-    if (win) {
-      alert("You win!");
-    }
-  }
-  
+
