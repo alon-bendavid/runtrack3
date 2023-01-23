@@ -1,23 +1,24 @@
-// const form = document.getElementById("form");
+document.getElementById("signup-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+    console.log(event);
 
-// form.addEventListener("submit", function(event){
-//     event.preventDefault();
-//     var inputs = document.querySelectorAll("input:not([type=submit])");
-//     var data = {};
-//     for(var i = 0; i < inputs.length; i++) {
-//         data[inputs[i].id] = inputs[i].value;
-//     }
+    let nom = document.getElementById('nom').value;
+    let lastName = document.getElementById('lastName').value;
+    let email = document.getElementById('email').value;
+    let pwd = document.getElementById('pwd').value;
+    let pwdVerify = document.getElementById('pwdVerify').value;
+    let data = {nom: nom, lastName: lastName, email: email, pwd: pwd, pwdVerify: pwdVerify};
+    console.log(data);
 
-//     fetch('signup.php', {
-//         method: 'POST',
-//         body: JSON.stringify(data),
-//         headers: { 'Content-Type': 'application/json' }
-//     })
-//     .then(res => res.json())
-//     .then(response => {
-//         console.log(response);
-//     })
-//     .catch(error => {
-//         console.error('Error:', error);
-//     });
-// });
+    fetch('index.php', {
+        method: 'POST',
+        body: JSON.stringify(data),
+        headers: {
+          'Content-Type': 'application/json'
+        }
+    })
+    .then(res => res.text())
+    .then(data => {
+        console.log(data);
+    });
+});

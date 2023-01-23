@@ -13,3 +13,59 @@ body{
     justify-content: center;
     align-items: center;
 }
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+/* javascript classes */
+input .success  {
+  border-color: rgb(89, 212, 105);
+  /* visibility: visible; */
+}
+small.error{
+  color: red;
+  visibility: visible;
+}
+
+
+form{
+background-color: rgb(214, 214, 214);
+display: flex;
+flex-direction: column;
+padding: 2em;
+justify-content: space-around ;
+/* min-width: 215px; */
+min-width: 320px;
+height: 50vh;
+box-shadow: 1px 5px 5px 5px rgba(27, 27, 27, 0.1);
+border-radius: 15px;
+margin-top: 15vh;
+font-family: 'Open Sans', sans-serif;
+}
+form input{
+  padding: 3%;
+  border-radius: 5px;
+  /* border-style: none; */
+box-shadow: 1px 3px 3px 3px rgba(126, 126, 126, 0.1);
+
+}
+
+form .button{
+  background-color: rgb(92, 92, 92);
+  min-width: 60%;
+  align-self: center;
+  color: aliceblue;
+  padding: 1em;
+box-shadow: 1px 3px 3px 3px rgba(126, 126, 126, 0.1);
+
+}
+body{
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  background-color: rgb(98, 182, 255);
+  margin: 0;
+/* min-height: 100vh; */
+
+}
+.form_box{
+  
+}
