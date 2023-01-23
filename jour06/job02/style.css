@@ -1,0 +1,28 @@
+/* Créez un fichier index.html contenant les balises de structure html de base (<doctype>,
+<html>, <head>, <body>).
+Créez un fichier style.css et ajouter des propriétés permettant à votre body d’avoir une
+couleur de background #88c1d0.
+A l’aide des media queries, cette couleur doit évoluer de la façon suivante :
+● #ffca4b lorsque la résolution est comprise entre 1680px et 1920px
+● #275fa0 lorsque la résolution est comprise entre 1280px et 1680px
+● #ffffff lorsque la résolution est inférieure à 1280px */
+body{
+    background-color: #88c1d0;
+  
+}
+@media  (min-width: 1680px) and (max-width: 1920px) {
+    body{
+        background-color: #ffca4b;
+    }
+}
+@media (min-width :1280px) and (max-width :1680px){
+    body{
+        background-color: #275fa0;
+    }
+}
+@media (max-width:1280px ){
+    body{
+        background-color: #ffffff;
+
+    }
+}
