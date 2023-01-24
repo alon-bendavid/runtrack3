@@ -1,0 +1,21 @@
+h1{
+    color: rgb(5, 193, 255);
+}
+h2{
+    color: rgb(246, 246, 246);
+}
+.regular{
+    background-color: aqua;
+    height: 350px;
+    width: 350px;
+
+}
+
+.funky{
+    background-color: crimson;
+    height: 350px;
+    width: 350px;
+}
+
+
+

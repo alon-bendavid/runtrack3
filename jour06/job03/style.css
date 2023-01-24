@@ -13,6 +13,7 @@ main{
     border-radius: 55px;
     margin: 2em;
 }
+
 @media (min-width: 1600px){
 
     main{
